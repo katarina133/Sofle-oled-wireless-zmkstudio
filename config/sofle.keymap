@@ -122,11 +122,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none       &kp F1      &kp F2     &kp F3     &kp F4     &kp F5                                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
-&none       &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &AdvncedPaste                              &kp ASTRK      &kp N7  &kp N8  &kp N9  &kp F11    &kp F12
-&none       &kp ESCAPE  &kp DEL    &kp BSPC   &kp ENTER  &none                                      &kp KP_DIVIDE  &kp N4  &kp N5  &kp N6  &kp MINUS  &none
-&sys_reset  &kp LC(A)   &none      &none      &kp LC(F)  &none          &bootloader    &bootloader  &kp DOT        &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
-                        &none      &none      &none      &none          &none          &kp LSHFT    &kp LCTRL      &kp N0  &none   &none
+&none           &kp F1      &kp F2     &kp F3     &kp F4     &kp F5                                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
+&none           &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &AdvncedPaste                              &kp ASTRK      &kp N7  &kp N8  &kp N9  &kp F11    &kp F12
+&studio_unlock  &kp ESCAPE  &kp DEL    &kp BSPC   &kp ENTER  &none                                      &kp KP_DIVIDE  &kp N4  &kp N5  &kp N6  &kp MINUS  &studio_unlock
+&sys_reset      &kp LC(A)   &none      &none      &kp LC(F)  &none          &bootloader    &bootloader  &kp DOT        &kp N1  &kp N2  &kp N3  &kp EQUAL  &sys_reset
+                            &none      &none      &none      &none          &none          &kp LSHFT    &kp LCTRL      &kp N0  &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
