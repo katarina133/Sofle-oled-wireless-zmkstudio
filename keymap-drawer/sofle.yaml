@@ -1,20 +1,15 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', +, CAPSLOCK, Q, W, E, R, T, Y, U, I, O, P, _, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LEFT GUI,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT SHIFT, LALT, LCTRL, lower, SPACE, ENTER, raise, BACKSPACE, DELETE, '?']
+  Gallium: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', +, TAB, B, L, D, C, V, J, F, O, U, ',', '-', LCTRL, N, R, T, S, G, Y, H, A, E, I, /, DEL, Q, X,
+    M, W, Z, MUTE, '', K, P, '''', ;, ., \, LGUI, LALT, raise, LSHFT, lower, BSPC, SPACE, LALT, CAPS, Layout]
+  QWETY: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', PRINTSCREEN, TAB, Q, W, E, R, T, Y, U, I, O, P, '-', LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', DEL,
+    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LGUI, LALT, raise, LSHFT, lower, BSPC, SPACE, LALT, CAPS, Layout]
+  LOL: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', PRINTSCREEN, TAB, Q, W, E, R, T, Y, U, I, O, P, '-', LEFT GUI, A, S, D, F, G, H, J, K, L, ;, '''',
+    DEL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LEFT ALT, lower, LSHFT, SPACE, LCTRL, BSPC, raise, LALT, CAPS, Layout]
+  Fighting: ['', '', '', '', '', '', '', '', '', '', '', ESC, TAB, Z, X, C, R, A, '', '', O, Y, '', '', '', A, W, S, D, '', '', U, J, K, I, '', '', '', '', '', F,
+    '', '', '', '', '', '', '', '', '', '', LALT, '', H, '', '', L, '', '', Layout]
   lower:
-  - ESC
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '='
+  - ''
   - F1
   - F2
   - F3
@@ -26,104 +21,115 @@ layers:
   - F9
   - F10
   - F11
+  - ''
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - '&AdvncedPaste'
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - F11
   - F12
-  - TAB
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
+  - '&studio_unlock'
+  - ESCAPE
+  - DEL
+  - BSPC
+  - ENTER
+  - ''
+  - KP DIVIDE
+  - '4'
+  - '5'
+  - '6'
   - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - ;
-  - ':'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - '&sys_reset'
+  - Ctl+A
+  - ''
+  - ''
+  - Ctl+F
+  - ''
+  - '&bootloader'
+  - '&bootloader'
+  - .
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
   - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - LCTRL
+  - '0'
+  - ''
+  - ''
+  raise:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - LCTRL
+  - LEFT SHIFT
+  - LEFT ALT
+  - ''
+  - ''
+  - ''
   - LEFT
   - DOWN
   - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -131,7 +137,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - W
+  - ''
   - ''
   - ''
   - ''
@@ -177,11 +183,72 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - {type: held}
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  Layout:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Gallium, h: toggle}
+  - {t: QWETY, h: toggle}
+  - {t: LOL, h: toggle}
+  - {t: Fighting, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
