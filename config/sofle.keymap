@@ -102,6 +102,66 @@
 
             label = "F_421_MP";
         };
+
+        F_236_MK: F_236_MK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp S>,
+                <&macro_wait_time 5>,
+                <&kp S &kp D>,
+                <&macro_wait_time 5>,
+                <&kp D>,
+                <&macro_wait_time 5>,
+                <&kp K>;
+
+            label = "F_236_MK";
+        };
+
+        F_214_MK: F_214_MK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp W>,
+                <&macro_wait_time 5>,
+                <&kp W &kp A>,
+                <&macro_wait_time 5>,
+                <&kp A>,
+                <&macro_wait_time 5>,
+                <&kp K>;
+
+            label = "F_214_MK";
+        };
+
+        F_236_MP: F_236_MP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp S>,
+                <&macro_wait_time 5>,
+                <&kp S &kp D>,
+                <&macro_wait_time 5>,
+                <&kp D>,
+                <&macro_wait_time 5>,
+                <&kp I>;
+
+            label = "F_236_MP";
+        };
+
+        F_214_MP: F_214_MP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp W>,
+                <&macro_wait_time 5>,
+                <&kp W &kp A>,
+                <&macro_wait_time 5>,
+                <&kp A>,
+                <&macro_wait_time 5>,
+                <&kp I>;
+
+            label = "F_214_MP";
+        };
     };
 
     keymap {
@@ -160,11 +220,11 @@
 
         Fighting_layer {
             bindings = <
-&none    &none       &none  &none     &none      &none                          &none  &none      &none  &none  &none  &none
-&kp TAB  &kp ESCAPE  &kp Q  &kp E     &kp F      &none                          &none  &none      &kp I  &kp O  &none  &none
-&none    &kp A       &kp W  &kp S     &kp D      &none                          &none  &kp J      &kp K  &kp L  &kp H  &none
-&none    &kp Z       &kp X  &kp C     &kp R      &none  &none        &none      &none  &none      &none  &none  &none  &none
-                     &none  &kp LALT  &F_421_MK  &kp Y  &F_623_MK    &F_623_MP  &kp U  &F_421_MP  &none  &mo 7
+&none    &kp ESC    &kp Q      &kp E      &kp F      &none                  &none  &kp Z  &kp X  &kp C  &kp R  &none
+&kp TAB  &F_236_MK  &F_214_MK  &F_236_MP  &F_214_MP  &none                  &none  &none  &kp I  &kp O  &none  &none
+&none    &kp A      &kp W      &kp S      &kp D      &none                  &none  &kp J  &kp K  &kp L  &kp H  &none
+&none    &F_623_MK  &F_421_MK  &F_623_MP  &F_421_MP  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                    &none      &kp LALT   &none      &kp Y  &none    &none  &kp U  &none  &none  &mo 7
             >;
 
             label = "Fighting";
