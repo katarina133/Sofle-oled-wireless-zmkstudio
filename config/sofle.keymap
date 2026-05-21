@@ -108,10 +108,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp S &kp D>,
+                <&kp S>,
+                <&macro_wait_time 10>,
+                <&kp D>,
+                <&macro_wait_time 10>,
                 <&macro_release>,
                 <&kp S>,
-                <&macro_tap>,
+                <&macro_press>,
+                <&macro_wait_time 10>,
                 <&kp K>,
                 <&macro_release>,
                 <&kp D>;
@@ -499,7 +503,7 @@
 &none           &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &AdvncedPaste                              &kp ASTRK      &kp N7  &kp N8  &kp N9  &kp F11    &kp F12
 &studio_unlock  &kp ESCAPE  &kp DEL    &kp BSPC   &kp ENTER  &none                                      &kp KP_DIVIDE  &kp N4  &kp N5  &kp N6  &kp MINUS  &studio_unlock
 &sys_reset      &kp LC(A)   &none      &none      &kp LC(F)  &none          &bootloader    &bootloader  &kp DOT        &kp N1  &kp N2  &kp N3  &kp EQUAL  &sys_reset
-                            &none      &none      &none      &none          &none          &kp LSHFT    &kp LCTRL      &kp N0  &none   &none
+                            &none      &none      &trans     &none          &trans         &kp LSHFT    &kp LCTRL      &kp N0  &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -516,11 +520,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none  &none      &none           &none         &none  &none                  &none  &none     &none     &none      &none  &none
-&none  &none      &none           &none         &none  &none                  &none  &none     &kp UP    &none      &none  &none
-&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &none  &none                  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none  &none      &none           &none         &none  &none  &none    &none  &none  &none     &none     &none      &none  &none
-                  &none           &none         &none  &none  &none    &none  &none  &none     &none     &none
+&none  &none      &none           &none         &none   &none                   &none  &none     &none     &none      &none  &none
+&none  &none      &none           &none         &none   &none                   &none  &none     &kp UP    &none      &none  &none
+&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &none   &none                   &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+&none  &none      &none           &none         &none   &none  &none     &none  &none  &none     &none     &none      &none  &none
+                  &none           &none         &trans  &none  &trans    &none  &none  &none     &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
