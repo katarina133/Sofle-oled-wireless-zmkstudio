@@ -122,7 +122,7 @@ layers:
   - '&sys_reset'
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {type: held}
   - LSHFT
@@ -185,7 +185,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
