@@ -109,15 +109,15 @@
             bindings =
                 <&macro_press>,
                 <&kp S>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 40>,
                 <&kp D>,
-                <&macro_wait_time 50>,
                 <&macro_release>,
+                <&macro_wait_time 70>,
                 <&kp S>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 40>,
                 <&macro_tap>,
                 <&kp K>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 40>,
                 <&macro_release>,
                 <&kp D>;
 
