@@ -460,7 +460,7 @@
 
         Fighting_layer {
             bindings = <
-&none    &none    &none  &none     &none  &none                  &none  &none  &none  &none  &none  &none
+&none    &none    &none  &none     &none  &none                  &none  &none  &none  &none  &none  &kp PRINTSCREEN
 &kp TAB  &kp ESC  &kp Q  &kp E     &kp F  &none                  &none  &none  &kp I  &kp O  &none  &none
 &none    &kp A    &kp W  &kp S     &kp D  &none                  &none  &kp J  &kp K  &kp L  &kp H  &none
 &none    &kp Z    &kp X  &kp C     &kp R  &none  &none    &none  &none  &none  &none  &none  &none  &none
