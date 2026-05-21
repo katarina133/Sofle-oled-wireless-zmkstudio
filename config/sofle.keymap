@@ -108,14 +108,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
-                <&macro_wait_time 40>,
+                <&kp S &kp D>,
                 <&macro_tap>,
                 <&kp K>;
 
