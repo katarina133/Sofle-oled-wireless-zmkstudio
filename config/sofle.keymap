@@ -106,15 +106,7 @@
         F_236_MK: F_236_MK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 50>,
-                <&kp D>,
-                <&macro_release>,
-                <&kp S &kp D>,
-                <&macro_tap>,
-                <&kp K>;
+            bindings = <&macro_tap_time 100>, <&kp S &kp D &kp K>;
 
             label = "F_236_MK";
         };
