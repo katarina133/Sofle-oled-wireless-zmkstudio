@@ -114,6 +114,9 @@
                 <&macro_release>,
                 <&kp S>,
                 <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_wait_time 40>,
+                <&macro_tap>,
                 <&kp K>;
 
             label = "F_236_MK";
