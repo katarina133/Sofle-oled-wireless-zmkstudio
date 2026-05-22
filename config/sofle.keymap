@@ -438,6 +438,216 @@
 
             label = "F_214_HP";
         };
+
+        F_623_KK: F_623_KK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_wait_time 40>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp J &kp K>,
+                <&macro_release>,
+                <&kp J &kp K>;
+
+            label = "F_623_KK";
+        };
+
+        F_236_PP: F_236_PP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_press>,
+                <&kp I &kp O>,
+                <&macro_release>,
+                <&kp I &kp O>;
+
+            label = "F_236_PP";
+        };
+
+        F_236_KK: F_236_KK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_press>,
+                <&kp K &kp L>,
+                <&macro_release>,
+                <&kp K &kp L>;
+
+            label = "F_236_KK";
+        };
+
+        F_421_KK: F_421_KK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_wait_time 40>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp J &kp K>,
+                <&macro_release>,
+                <&kp J &kp K>;
+
+            label = "F_421_KK";
+        };
+
+        F_214_PP: F_214_PP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_press>,
+                <&kp I &kp O>,
+                <&macro_release>,
+                <&kp I &kp O>;
+
+            label = "F_214_PP";
+        };
+
+        F_214_KK: F_214_KK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_press>,
+                <&kp K &kp L>,
+                <&macro_release>,
+                <&kp K &kp L>;
+
+            label = "F_214_KK";
+        };
+
+        F_236236_P: F_236236_P {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_tap>,
+                <&kp I>;
+
+            label = "F_236236_P";
+        };
+
+        F_236236_K: F_236236_K {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_tap>,
+                <&kp K>;
+
+            label = "F_236236_K";
+        };
+
+        F_214214_P: F_214214_P {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_tap>,
+                <&kp I>;
+
+            label = "F_214214_P";
+        };
+
+        F_214214_K: F_214214_K {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_tap>,
+                <&kp K>;
+
+            label = "F_214214_K";
+        };
     };
 
     keymap {
@@ -506,16 +716,15 @@
             label = "Fighting";
         };
 
-        F_Combo_Layer {
+        Mai_Combo_Layer {
+            label = "Mai_Combo";
             bindings = <
-&none  &none      &none      &none      &none      &none                   &none  &none      &none      &none      &none      &none
-&none  &F_623_LK  &F_623_MK  &F_623_HK  &F_236_LP  &none                   &none  &F_214_LP  &F_421_HK  &F_421_MK  &F_421_LK  &none
-&none  &F_623_LP  &F_623_MP  &F_623_HP  &F_236_MP  &none                   &none  &F_214_MP  &F_421_HP  &F_421_MP  &F_421_LP  &none
-&none  &F_236_LK  &F_236_MK  &F_236_HK  &F_236_HP  &none   &none    &none  &none  &F_214_HP  &F_214_HK  &F_214_MK  &F_214_LK  &none
-                  &none      &none      &none      &trans  &none    &none  &none  &none      &none      &none
+&none  &none      &none      &none      &none      &none                        &none        &none      &none      &none      &none      &none
+&none  &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                  &F_214214_P  &F_214_LP  &F_214_MP  &F_214_HP  &F_214_PP  &none
+&none  &F_623_KK  &F_623_HK  &F_623_MK  &F_623_LK  &F_214214_K                  &F_236236_K  &F_421_LK  &F_421_MK  &F_421_HK  &F_421_KK  &none
+&none  &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none  &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &none
+                  &none      &none      &none      &trans       &none    &none  &none        &none      &none      &none
             >;
-
-            label = "F_Combo";
         };
 
         lower_layer {
