@@ -113,7 +113,7 @@
                 <&macro_wait_time 40>,
                 <&kp D>,
                 <&macro_release>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_tap>,
                 <&kp K>;
 
