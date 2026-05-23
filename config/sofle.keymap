@@ -47,7 +47,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -63,7 +62,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -79,7 +77,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -95,7 +92,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -111,11 +107,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -128,11 +121,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -145,11 +135,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -162,11 +149,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -179,7 +163,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -195,7 +178,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -211,7 +193,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -227,7 +208,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -243,7 +223,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -259,7 +238,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -275,7 +253,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -291,7 +268,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
@@ -307,11 +283,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -324,11 +297,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -341,11 +311,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -358,11 +325,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -375,11 +339,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -392,11 +353,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -409,11 +367,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -426,11 +381,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -443,22 +395,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp D>,
                 <&macro_wait_time 40>,
                 <&kp S>,
                 <&macro_wait_time 40>,
                 <&kp D>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp J>,
-                <&macro_wait_time 20>,
-                <&kp K>,
-                <&macro_wait_time 20>,
+                <&kp J &kp K>,
                 <&macro_release>,
-                <&kp J>,
-                <&macro_wait_time 20>,
-                <&kp K>;
+                <&kp J &kp K>;
 
             label = "F_623_KK";
         };
@@ -467,23 +413,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp I>,
-                <&macro_wait_time 20>,
-                <&kp O>,
-                <&macro_wait_time 20>,
+                <&kp I &kp O>,
                 <&macro_release>,
-                <&kp I>,
-                <&macro_wait_time 20>,
-                <&kp O>;
+                <&kp I &kp O>;
 
             label = "F_236_PP";
         };
@@ -492,23 +430,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp K>,
-                <&macro_wait_time 20>,
-                <&kp L>,
-                <&macro_wait_time 20>,
+                <&kp K &kp L>,
                 <&macro_release>,
-                <&kp K>,
-                <&macro_wait_time 20>,
-                <&kp L>;
+                <&kp K &kp L>;
 
             label = "F_236_KK";
         };
@@ -517,22 +447,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&kp A>,
                 <&macro_wait_time 40>,
                 <&kp S>,
                 <&macro_wait_time 40>,
                 <&kp A>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp J>,
-                <&macro_wait_time 20>,
-                <&kp K>,
-                <&macro_wait_time 20>,
+                <&kp J &kp K>,
                 <&macro_release>,
-                <&kp J>,
-                <&macro_wait_time 20>,
-                <&kp K>;
+                <&kp J &kp K>;
 
             label = "F_421_KK";
         };
@@ -541,23 +465,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp I>,
-                <&macro_wait_time 20>,
-                <&kp O>,
-                <&macro_wait_time 20>,
+                <&kp I &kp O>,
                 <&macro_release>,
-                <&kp I>,
-                <&macro_wait_time 20>,
-                <&kp O>;
+                <&kp I &kp O>;
 
             label = "F_214_PP";
         };
@@ -566,23 +482,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp K>,
-                <&macro_wait_time 20>,
-                <&kp L>,
-                <&macro_wait_time 20>,
+                <&kp K &kp L>,
                 <&macro_release>,
-                <&kp K>,
-                <&macro_wait_time 20>,
-                <&kp L>;
+                <&kp K &kp L>;
 
             label = "F_214_KK";
         };
@@ -591,18 +499,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -615,18 +518,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp D>,
+                <&kp S &kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
@@ -639,18 +537,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
@@ -663,18 +556,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 20>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp S>,
-                <&macro_wait_time 40>,
-                <&kp A>,
+                <&kp S &kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
