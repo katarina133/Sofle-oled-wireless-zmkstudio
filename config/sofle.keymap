@@ -449,15 +449,15 @@
                 <&kp S>,
                 <&macro_wait_time 40>,
                 <&kp D>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp J>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp J>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp K>;
 
             label = "F_623_KK";
@@ -474,14 +474,15 @@
                 <&kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp I>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp O>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp I>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp O>;
 
             label = "F_236_PP";
@@ -498,14 +499,15 @@
                 <&kp D>,
                 <&macro_release>,
                 <&kp S &kp D>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp L>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp L>;
 
             label = "F_236_KK";
@@ -521,15 +523,15 @@
                 <&kp S>,
                 <&macro_wait_time 40>,
                 <&kp A>,
-                <&macro_wait_time 40>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp J>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp J>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp K>;
 
             label = "F_421_KK";
@@ -546,14 +548,15 @@
                 <&kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp I>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp O>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp I>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp O>;
 
             label = "F_214_PP";
@@ -570,14 +573,15 @@
                 <&kp A>,
                 <&macro_release>,
                 <&kp S &kp A>,
+                <&macro_wait_time 20>,
                 <&macro_press>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp L>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&macro_release>,
                 <&kp K>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 20>,
                 <&kp L>;
 
             label = "F_214_KK";
