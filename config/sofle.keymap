@@ -399,12 +399,7 @@
                 <&macro_wait_time 40>,
                 <&kp S>,
                 <&macro_wait_time 40>,
-                <&kp D>,
-                <&macro_wait_time 10>,
-                <&macro_press>,
-                <&kp J &kp K>,
-                <&macro_release>,
-                <&kp J &kp K>;
+                <&kp D &kp N>;
 
             label = "F_623_KK";
         };
@@ -419,9 +414,7 @@
                 <&kp S &kp D>,
                 <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp I &kp O>,
-                <&macro_release>,
-                <&kp I &kp O>;
+                <&kp B>;
 
             label = "F_236_PP";
         };
@@ -436,9 +429,7 @@
                 <&kp S &kp D>,
                 <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp K &kp L>,
-                <&macro_release>,
-                <&kp K &kp L>;
+                <&kp N>;
 
             label = "F_236_KK";
         };
@@ -454,9 +445,7 @@
                 <&kp A>,
                 <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp J &kp K>,
-                <&macro_release>,
-                <&kp J &kp K>;
+                <&kp N>;
 
             label = "F_421_KK";
         };
@@ -471,9 +460,7 @@
                 <&kp S &kp A>,
                 <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp I &kp O>,
-                <&macro_release>,
-                <&kp I &kp O>;
+                <&kp B>;
 
             label = "F_214_PP";
         };
@@ -488,9 +475,7 @@
                 <&kp S &kp A>,
                 <&macro_wait_time 10>,
                 <&macro_press>,
-                <&kp K &kp L>,
-                <&macro_release>,
-                <&kp K &kp L>;
+                <&kp N>;
 
             label = "F_214_KK";
         };
