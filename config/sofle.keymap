@@ -413,7 +413,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_wait_time 10>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp B>;
 
             label = "F_236_PP";
@@ -428,7 +428,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_wait_time 10>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp N>;
 
             label = "F_236_KK";
@@ -444,7 +444,7 @@
                 <&macro_wait_time 40>,
                 <&kp A>,
                 <&macro_wait_time 10>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp N>;
 
             label = "F_421_KK";
@@ -459,7 +459,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_wait_time 10>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp B>;
 
             label = "F_214_PP";
@@ -474,7 +474,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_wait_time 10>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp N>;
 
             label = "F_214_KK";
