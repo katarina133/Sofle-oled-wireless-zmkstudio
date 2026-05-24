@@ -8,7 +8,7 @@ layers:
     DEL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LEFT ALT, lower, LSHFT, SPACE, LCTRL, BSPC, raise, LALT, CAPS, Layout]
   Fighting: ['', ESCAPE, Q, E, F, '', '', Z, Q, C, R, PRINTSCREEN, TAB, '&F_236_PP', '&F_236_HP', '&F_236_MP', '&F_236_LP', '&F_236236_P', '&F_214214_P', '&F_214_LP',
     I, O, '&F_214_PP', '', '', A, W, S, D, '&F_214214_K', '&F_236236_K', J, K, L, H, '', '', '&F_236_KK', '&F_236_HK', '&F_236_MK', '&F_236_LK', '&F_236236_K', '',
-    '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK', '', '', LALT, '', Mai_Combo, Y, '&F_214_LK', U, '&F_214_HK', '', Layout]
+    '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK', '', '', LALT, '', Mai_Combo, Y, '&F_214_LP', U, '&F_214_HP', '', Layout]
   Mai_Combo:
   - ''
   - ''
