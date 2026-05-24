@@ -498,7 +498,7 @@
 &kp TAB  &F_236_PP   &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                      &F_214214_P  &F_214_LP  &kp I      &kp O      &F_214_PP  &none
 &none    &kp A       &kp W      &kp S      &kp D      &F_214214_K                      &F_236236_K  &kp J      &kp K      &kp L      &kp H      &none
 &none    &F_236_KK   &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none      &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &none
-                     &none      &kp LALT   &none      &mo 4        &kp Y    &F_214_LK  &kp U        &F_214_HK  &none      &mo 8
+                     &none      &kp LALT   &none      &mo 4        &kp Y    &F_214_LP  &kp U        &F_214_HP  &none      &mo 8
             >;
 
             label = "Fighting";
