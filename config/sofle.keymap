@@ -494,14 +494,15 @@
 
         Fighting_layer {
             bindings = <
-&none    &kp ESCAPE  &kp Q      &kp E      &kp F      &none                            &none        &kp Z      &kp Q      &kp C      &kp R      &kp PRINTSCREEN
-&kp TAB  &F_236_PP   &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                      &F_214214_P  &F_214_LP  &kp I      &kp O      &F_214_PP  &none
-&none    &kp A       &kp W      &kp S      &kp D      &F_214214_K                      &F_236236_K  &kp J      &kp K      &kp L      &F_421_KK  &none
-&none    &F_236_KK   &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none      &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &none
-                     &none      &kp LALT   &kp H      &mo 4        &kp Y    &F_214_LP  &kp U        &F_214_HP  &none      &mo 8
+&kp ESCAPE  &F_623_KK  &F_623_HK  &F_623_MK  &F_623_LK  &none                            &none        &F_421_LK  &F_421_MK  &F_421_HK  &none      &kp PRINTSCREEN
+&kp TAB     &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                      &F_214214_P  &F_214_LP  &kp I      &kp O      &F_214_PP  &kp Z
+&kp F       &kp A      &kp W      &kp S      &kp D      &F_214214_K                      &F_236236_K  &kp J      &kp K      &kp L      &F_421_KK  &kp X
+&none       &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none      &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &kp R
+                       &none      &kp LALT   &kp H      &mo 4        &kp Y    &F_214_LP  &kp U        &F_214_HP  &none      &mo 8
             >;
 
             label = "Fighting";
+            sensor-bindings = <&inc_dec_kp E Q>;
         };
 
         Mai_Combo_Layer {
