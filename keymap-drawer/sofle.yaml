@@ -6,9 +6,10 @@ layers:
     Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LGUI, LALT, raise, LSHFT, lower, BSPC, SPACE, LALT, CAPS, Layout]
   LOL: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', PRINTSCREEN, TAB, Q, W, E, R, T, Y, U, I, O, P, '-', LEFT GUI, A, S, D, F, G, H, J, K, L, ;, '''',
     DEL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LEFT ALT, lower, LSHFT, SPACE, LCTRL, BSPC, raise, LALT, CAPS, Layout]
-  Fighting: ['', ESCAPE, Q, E, F, '', '', Z, Q, C, R, PRINTSCREEN, TAB, '&F_236_PP', '&F_236_HP', '&F_236_MP', '&F_236_LP', '&F_236236_P', '&F_214214_P', '&F_214_LP',
-    I, O, '&F_214_PP', '', '', A, W, S, D, '&F_214214_K', '&F_236236_K', J, K, L, '&F_421_KK', '', '', '&F_236_KK', '&F_236_HK', '&F_236_MK', '&F_236_LK', '&F_236236_K',
-    '', '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK', '', '', LALT, H, Mai_Combo, Y, '&F_214_LP', U, '&F_214_HP', '', Layout]
+  Fighting: [ESCAPE, '&F_623_KK', '&F_623_HK', '&F_623_MK', '&F_623_LK', '', '', '&F_421_LK', '&F_421_MK', '&F_421_HK', '', PRINTSCREEN, TAB, '&F_236_PP', '&F_236_HP',
+    '&F_236_MP', '&F_236_LP', '&F_236236_P', '&F_214214_P', '&F_214_LP', I, O, '&F_214_PP', Z, F, A, W, S, D, '&F_214214_K', '&F_236236_K', J, K, L, '&F_421_KK',
+    X, '', '&F_236_KK', '&F_236_HK', '&F_236_MK', '&F_236_LK', '&F_236236_K', '', '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK', R, '', LALT,
+    H, Mai_Combo, Y, '&F_214_LP', U, '&F_214_HP', '', Layout]
   Mai_Combo:
   - ''
   - ''
