@@ -94,14 +94,14 @@ layers:
   - '7'
   - '8'
   - '9'
-  - F11
+  - KP PLUS
   - F12
   - '&studio_unlock'
   - ESCAPE
   - DEL
-  - BSPC
+  - '{'
   - ENTER
-  - ''
+  - '}'
   - KP DIVIDE
   - '4'
   - '5'
@@ -110,10 +110,10 @@ layers:
   - '&studio_unlock'
   - '&sys_reset'
   - Ctl+A
-  - ''
-  - ''
   - Ctl+F
-  - ''
+  - '['
+  - (
+  - ']'
   - '&bootloader'
   - '&bootloader'
   - .
