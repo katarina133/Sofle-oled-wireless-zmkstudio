@@ -436,6 +436,34 @@
 
             label = "F_214214_K";
         };
+
+        F_4_KKK: F_4_KKK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp G>;
+            label = "F_4_KKK";
+        };
+
+        F_2_KKK: F_2_KKK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp G>;
+            label = "F_2_KKK";
+        };
+
+        F_6_KKK: F_6_KKK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp G>;
+            label = "F_6_KKK";
+        };
+
+        F_22_K: F_22_K {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp S &kp J>;
+            label = "F_22_K";
+        };
     };
 
     keymap {
@@ -494,25 +522,25 @@
 
         Fighting_layer {
             bindings = <
-&kp ESCAPE  &F_623_KK  &F_623_HK  &F_623_MK  &F_623_LK  &none                            &none        &F_421_LK  &F_421_MK  &F_421_HK  &none      &kp PRINTSCREEN
-&kp TAB     &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                      &F_214214_P  &F_214_LP  &kp I      &kp O      &F_214_PP  &kp Z
-&kp F       &kp A      &kp W      &kp S      &kp D      &F_214214_K                      &F_236236_K  &kp J      &kp K      &kp L      &F_421_KK  &kp X
-&none       &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none      &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &kp R
-                       &none      &kp LALT   &kp H      &mo 4        &kp Y    &F_214_LP  &kp U        &F_214_HP  &none      &mo 8
+&none    &none      &none      &none      &none      &none                            &none        &none      &none      &none      &none      &kp PRINTSCREEN
+&kp TAB  &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K                      &F_214214_K  &F_214_LK  &kp I      &kp O      &F_214_KK  &none
+&none    &kp A      &kp W      &kp S      &kp D      &none                            &none        &kp J      &kp K      &kp L      &F_421_KK  &none
+&none    &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P  &none    &none      &F_214214_P  &F_214_LP  &F_214_MP  &F_214_HP  &F_214_PP  &none
+                    &none      &kp LALT   &kp H      &mo 4        &kp Y    &F_214_MK  &kp U        &F_214_HK  &none      &mo 8
             >;
 
             label = "Fighting";
             sensor-bindings = <&inc_dec_kp E Q>;
         };
 
-        Mai_Combo_Layer {
-            label = "Mai_Combo";
+        F_Combo_Layer {
+            label = "F_Combo";
             bindings = <
-&none  &none      &none      &none      &none      &none                        &none        &none      &none      &none      &none      &none
-&none  &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                  &F_214214_P  &F_214_LP  &F_214_MP  &F_214_HP  &F_214_PP  &none
-&none  &F_623_KK  &F_623_HK  &F_623_MK  &F_623_LK  &F_214214_K                  &F_236236_K  &F_421_LK  &F_421_MK  &F_421_HK  &F_421_KK  &none
-&none  &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none  &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &none
-                  &none      &none      &none      &trans       &none    &none  &none        &none      &none      &none
+&none  &none     &none    &none     &none     &none                   &none  &none  &none  &none  &none  &none
+&none  &kp ESC   &kp Q    &kp E     &kp F     &none                   &none  &none  &none  &none  &none  &none
+&none  &F_4_KKK  &F_22_K  &F_2_KKK  &F_6_KKK  &none                   &none  &none  &none  &none  &none  &none
+&none  &kp Z     &kp X    &kp C     &kp R     &none   &none    &none  &none  &none  &none  &none  &none  &none
+                 &none    &none     &none     &trans  &none    &none  &none  &none  &none  &none
             >;
         };
 
