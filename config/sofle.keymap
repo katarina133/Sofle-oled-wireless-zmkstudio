@@ -638,8 +638,8 @@
             bindings = <
 &none  &none    &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
 &none  &kp ESC  &kp Q  &kp E  &kp F  &none                   &none  &none  &none  &none  &none  &none
-&none  &none    &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &kp Z    &kp X  &kp C  &kp R  &none   &none    &none  &none  &none  &none  &none  &none  &none
+&none  &kp Z    &kp X  &kp C  &kp R  &none                   &none  &none  &none  &none  &none  &none
+&none  &none    &none  &none  &none  &none   &none    &none  &none  &none  &none  &none  &none  &none
                 &none  &none  &none  &trans  &none    &none  &none  &none  &none  &none
             >;
         };
