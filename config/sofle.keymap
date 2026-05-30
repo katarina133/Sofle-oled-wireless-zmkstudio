@@ -365,7 +365,7 @@
             label = "F_214_KK";
         };
 
-        F_236236_P: F_236236_P {
+        F_236236_MP: F_236236_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -401,7 +401,7 @@
             label = "F_236236_K";
         };
 
-        F_214214_P: F_214214_P {
+        F_214214_MP: F_214214_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -485,6 +485,85 @@
             bindings = <&kp S &kp S &kp J>;
             label = "F_22_K";
         };
+
+        F_214214_LP: F_214214_LP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp S &kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_press>,
+                <&kp S &kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_tap>,
+                <&kp U>;
+
+            label = "F_214214_LP";
+        };
+
+        F_214214_HP: F_214214_HP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp S &kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_press>,
+                <&kp S &kp A>,
+                <&macro_release>,
+                <&kp S &kp A>,
+                <&macro_tap>,
+                <&kp O>;
+
+            label = "F_214214_HP";
+        };
+
+        F_236236_LP: F_236236_LP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp S &kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_press>,
+                <&kp S &kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_tap>,
+                <&kp U>;
+
+            label = "F_236236_LP";
+        };
+
+        F_236236_HP: F_236236_HP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp S &kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_press>,
+                <&kp S &kp D>,
+                <&macro_release>,
+                <&kp S &kp D>,
+                <&macro_tap>,
+                <&kp O>;
+
+            label = "F_236236_HP";
+        };
+
+        F_22_Kk: F_22_Kk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp S &kp N>;
+            label = "F_22_KK";
+        };
     };
 
     keymap {
@@ -543,11 +622,11 @@
 
         Fighting_layer {
             bindings = <
-&none    &none      &none      &none      &none      &none                            &none        &none      &none      &none      &none      &kp PRINTSCREEN
-&kp TAB  &F_236_PP  &F_236_HP  &F_236_MP  &F_236_LP  &F_236236_P                      &F_214214_P  &F_214_LP  &kp I      &kp O      &F_214_PP  &none
-&none    &kp A      &kp W      &kp S      &kp D      &none                            &none        &kp J      &kp K      &kp L      &F_22_K    &none
-&none    &F_236_KK  &F_236_HK  &F_236_MK  &F_236_LK  &F_236236_K  &none    &none      &F_214214_K  &F_214_LK  &F_214_MK  &F_214_HK  &F_214_KK  &none
-                    &none      &kp LALT   &kp H      &mo 4        &kp Y    &F_214_MP  &kp U        &F_214_HP  &none      &mo 8
+&none    &none      &F_236236_HP  &F_236236_MP  &F_236236_LP  &none                            &none        &F_214214_LP  &F_214214_MP  &F_214214_HP  &none      &kp PRINTSCREEN
+&kp TAB  &F_236_PP  &F_236_HP     &F_236_MP     &F_236_LP     &none                            &none        &F_214_LP     &kp I         &kp O         &F_214_PP  &none
+&none    &kp A      &kp W         &kp S         &kp D         &none                            &F_22_Kk     &kp J         &kp K         &kp L         &F_22_K    &none
+&none    &F_236_KK  &F_236_HK     &F_236_MK     &F_236_LK     &F_236236_K  &none    &none      &F_214214_K  &F_214_LK     &F_214_MK     &F_214_HK     &F_214_KK  &none
+                    &none         &kp LALT      &kp H         &mo 4        &kp Y    &F_214_MP  &kp U        &F_214_HP     &none         &mo 8
             >;
 
             label = "Fighting";
