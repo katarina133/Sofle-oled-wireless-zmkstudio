@@ -652,11 +652,11 @@
 
         Fighting_layer {
             bindings = <
-&none     &none      &F_236236_HP  &F_236236_MP  &F_236236_LP  &none                             &none     &F_214214_LP  &F_214214_MP  &F_214214_HP  &none      &kp PRINTSCREEN
-&kp TAB   &F_236_PP  &F_2_KKK      &kp Y         &F_236_LP     &F_6_KKK                          &F_4_KKK  &F_214_LP     &kp I         &kp O         &F_214_PP  &none
-&F_DP_44  &kp A      &kp W         &kp S         &kp D         &F_DP_66                          &F_22_Kk  &kp J         &kp K         &kp L         &F_22_K    &none
-&mo 4     &F_236_KK  &F_236_HK     &F_236236_K   &F_236_LK     &none     &none        &none      &none     &F_214_LK     &F_214214_K   &F_214_HK     &F_214_KK  &none
-                     &none         &kp LALT      &F_236_HP     &kp H     &F_236_MP    &F_214_MP  &kp U     &F_214_HP     &none         &mo 8
+&none     &none      &F_236236_HP  &F_236236_MP  &F_236236_LP  &none                                &none        &F_214214_LP  &F_214214_MP  &F_214214_HP  &none      &kp PRINTSCREEN
+&kp TAB   &F_236_PP  &F_2_KKK      &kp Y         &F_236_LP     &F_6_KKK                             &F_4_KKK     &F_214_LP     &kp I         &kp O         &F_214_PP  &none
+&F_DP_44  &kp A      &kp W         &kp S         &kp D         &F_DP_66                             &F_22_Kk     &kp J         &kp K         &kp L         &F_22_K    &none
+&mo 4     &F_236_KK  &F_236_HK     &F_236_MK     &F_236_LK     &F_236236_K  &none        &none      &F_214214_K  &F_214_LK     &F_214_MK     &F_214_HK     &F_214_KK  &none
+                     &none         &kp LALT      &F_236_HP     &kp H        &F_236_MP    &F_214_MP  &kp U        &F_214_HP     &none         &mo 8
             >;
 
             label = "Fighting";
