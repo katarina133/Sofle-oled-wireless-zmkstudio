@@ -396,6 +396,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
+                <&macro_tap_time 1000>,
                 <&kp K>;
 
             label = "F_236236_K";
@@ -432,6 +433,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
+                <&macro_tap_time 1000>,
                 <&kp K>;
 
             label = "F_214214_K";
