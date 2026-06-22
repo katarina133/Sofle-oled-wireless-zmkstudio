@@ -96,24 +96,24 @@ layers:
   - '9'
   - KP PLUS
   - F12
-  - '&studio_unlock'
+  - ''
   - ESCAPE
   - DEL
-  - '{'
   - ENTER
-  - '}'
+  - '{'
+  - ''
   - KP DIVIDE
   - '4'
   - '5'
   - '6'
   - '-'
-  - '&studio_unlock'
+  - ''
   - '&sys_reset'
   - Ctl+A
   - Ctl+F
+  - ''
   - '['
-  - (
-  - ']'
+  - ''
   - '&bootloader'
   - '&bootloader'
   - .
@@ -129,8 +129,8 @@ layers:
   - {type: held}
   - LSHFT
   - LCTRL
+  - LEFT ALT
   - '0'
-  - ''
   - ''
   raise:
   - ''
