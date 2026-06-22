@@ -653,8 +653,8 @@
         Fighting_layer {
             bindings = <
 &none     &none      &F_236236_HP  &F_236236_MP  &F_236236_LP  &none                                &none        &F_214214_LP  &F_214214_MP  &F_214214_HP  &none      &kp PRINTSCREEN
-&kp TAB   &F_236_PP  &F_2_KKK      &kp Y         &F_236_LP     &F_6_KKK                             &F_4_KKK     &F_214_LP     &kp I         &kp O         &F_214_PP  &none
-&F_DP_44  &kp A      &kp W         &kp S         &kp D         &F_DP_66                             &F_22_Kk     &kp J         &kp K         &kp L         &F_22_K    &none
+&kp TAB   &F_236_PP  &F_2_KKK      &kp W         &F_236_LP     &F_6_KKK                             &F_4_KKK     &F_214_LP     &kp I         &kp O         &F_214_PP  &none
+&F_DP_44  &kp Y      &kp A         &kp S         &kp D         &F_DP_66                             &F_22_Kk     &kp J         &kp K         &kp L         &F_22_K    &none
 &mo 4     &F_236_KK  &F_236_HK     &F_236_MK     &F_236_LK     &F_236236_K  &none        &none      &F_214214_K  &F_214_LK     &F_214_MK     &F_214_HK     &F_214_KK  &none
                      &none         &kp LALT      &F_236_HP     &kp H        &F_236_MP    &F_214_MP  &kp U        &F_214_HP     &none         &mo 8
             >;
@@ -686,11 +686,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none       &kp F1      &kp F2     &kp F3     &kp F4            &kp F5                                     &kp F6         &kp F7        &kp F8  &kp F9  &kp F10      &kp F11
-&none       &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)         &AdvncedPaste                              &kp ASTRK      &kp N7        &kp N8  &kp N9  &kp KP_PLUS  &kp F12
-&none       &kp ESCAPE  &kp DEL    &kp ENTER  &kp LEFT_BRACE    &none                                      &kp KP_DIVIDE  &kp N4        &kp N5  &kp N6  &kp MINUS    &none
-&sys_reset  &kp LC(A)   &kp LC(F)  &none      &kp LEFT_BRACKET  &none          &bootloader    &bootloader  &kp DOT        &kp N1        &kp N2  &kp N3  &kp EQUAL    &sys_reset
-                        &none      &none      &trans            &none          &trans         &kp LSHFT    &kp LCTRL      &kp LEFT_ALT  &kp N0  &none
+&none       &kp F1      &kp F2     &kp F3     &kp F4             &kp F5                                     &kp F6         &kp F7        &kp F8  &kp F9  &kp F10      &kp F11
+&none       &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)          &AdvncedPaste                              &kp ASTRK      &kp N7        &kp N8  &kp N9  &kp KP_PLUS  &kp F12
+&none       &kp ESCAPE  &kp DEL    &kp ENTER  &kp LEFT_BRACKET   &none                                      &kp KP_DIVIDE  &kp N4        &kp N5  &kp N6  &kp MINUS    &none
+&sys_reset  &kp LC(A)   &kp LC(F)  &none      &kp RIGHT_BRACKET  &none          &bootloader    &bootloader  &kp DOT        &kp N1        &kp N2  &kp N3  &kp EQUAL    &sys_reset
+                        &none      &none      &trans             &none          &trans         &kp LSHFT    &kp LCTRL      &kp LEFT_ALT  &kp N0  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -708,7 +708,7 @@
 
             bindings = <
 &none  &none      &none           &none         &none   &none                   &none  &none     &none     &none      &none  &none
-&none  &none      &none           &none         &none   &none                   &none  &none     &kp UP    &none      &none  &none
+&none  &none      &none           &none         &none   &none                   &none  &kp HOME  &kp UP    &kp END    &none  &none
 &none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &none   &none                   &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
 &none  &none      &none           &none         &none   &none  &none     &none  &none  &none     &none     &none      &none  &none
                   &none           &none         &trans  &none  &trans    &none  &none  &none     &none     &none
