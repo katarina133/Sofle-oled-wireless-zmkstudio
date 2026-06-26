@@ -415,7 +415,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
-                <&macro_tap_time 1200>,
+                <&macro_tap_time 1500>,
                 <&kp I>;
 
             label = "F_214214_P";
@@ -502,7 +502,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
-                <&macro_tap_time 1200>,
+                <&macro_tap_time 1500>,
                 <&kp U>;
 
             label = "F_214214_LP";
@@ -521,7 +521,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
-                <&macro_tap_time 1200>,
+                <&macro_tap_time 1500>,
                 <&kp O>;
 
             label = "F_214214_HP";
@@ -574,11 +574,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp D>,
                 <&macro_press>,
-                <&kp D &kp H &kp D>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp D &kp D>,
                 <&macro_release>,
-                <&kp H &kp D &kp D>;
+                <&kp H>;
 
             label = "F_DP_66";
         };
@@ -587,11 +588,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp A>,
                 <&macro_press>,
-                <&kp A &kp H &kp A>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp A &kp A>,
                 <&macro_release>,
-                <&kp H &kp A &kp A>;
+                <&kp H>;
 
             label = "F_DP_44";
         };
