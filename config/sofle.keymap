@@ -415,6 +415,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
+                <&macro_tap_time 1200>,
                 <&kp I>;
 
             label = "F_214214_P";
@@ -501,6 +502,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
+                <&macro_tap_time 1200>,
                 <&kp U>;
 
             label = "F_214214_LP";
@@ -519,6 +521,7 @@
                 <&macro_release>,
                 <&kp S &kp A>,
                 <&macro_tap>,
+                <&macro_tap_time 1200>,
                 <&kp O>;
 
             label = "F_214214_HP";
@@ -572,11 +575,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp H>,
-                <&macro_tap>,
-                <&kp D &kp D>,
+                <&kp D &kp D &kp H>,
                 <&macro_release>,
-                <&kp H>;
+                <&kp D &kp D &kp H>;
 
             label = "F_DP_66";
         };
@@ -586,11 +587,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp H>,
-                <&macro_tap>,
-                <&kp A &kp A>,
+                <&kp A &kp A &kp H>,
                 <&macro_release>,
-                <&kp H>;
+                <&kp A &kp A &kp H>;
 
             label = "F_DP_44";
         };
