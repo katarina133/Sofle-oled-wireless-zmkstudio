@@ -378,6 +378,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
+                <&macro_tap_time 1500>,
                 <&kp I>;
 
             label = "F_236236_P";
@@ -540,6 +541,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
+                <&macro_tap_time 1500>,
                 <&kp U>;
 
             label = "F_236236_LP";
@@ -558,6 +560,7 @@
                 <&macro_release>,
                 <&kp S &kp D>,
                 <&macro_tap>,
+                <&macro_tap_time 1500>,
                 <&kp O>;
 
             label = "F_236236_HP";
