@@ -575,7 +575,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp D &kp H &kp D>,
+                <&kp D>,
+                <&macro_wait_time 10>,
+                <&kp H &kp D>,
                 <&macro_release>,
                 <&kp H &kp D &kp D>;
 
@@ -587,7 +589,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp A &kp A &kp H>,
+                <&kp A>,
+                <&macro_wait_time 10>,
+                <&kp H &kp A>,
                 <&macro_release>,
                 <&kp H &kp A &kp A>;
 
