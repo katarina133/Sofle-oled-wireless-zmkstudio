@@ -575,9 +575,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp D &kp D &kp H>,
+                <&kp D &kp H &kp D>,
                 <&macro_release>,
-                <&kp D &kp D &kp H>;
+                <&kp H &kp D &kp D>;
 
             label = "F_DP_66";
         };
@@ -589,7 +589,7 @@
                 <&macro_press>,
                 <&kp A &kp A &kp H>,
                 <&macro_release>,
-                <&kp A &kp A &kp H>;
+                <&kp H &kp A &kp A>;
 
             label = "F_DP_44";
         };
