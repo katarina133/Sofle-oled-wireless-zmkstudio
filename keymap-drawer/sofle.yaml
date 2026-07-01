@@ -6,10 +6,10 @@ layers:
     Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LGUI, LALT, raise, LSHFT, lower, BSPC, SPACE, LALT, CAPS, Layout]
   LOL: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', PRINTSCREEN, TAB, Q, W, E, R, T, Y, U, I, O, P, '-', LEFT GUI, A, S, D, F, G, H, J, K, L, ;, '''',
     DEL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, \, LEFT ALT, lower, LSHFT, SPACE, LCTRL, BSPC, raise, LALT, CAPS, Layout]
-  Fighting: ['', '', '&F_236236_HP', '&F_236236_MP', '&F_236236_LP', '', '', '&F_214214_LP', '&F_214214_MP', '&F_214214_HP', '', PRINTSCREEN, TAB, '&F_236_PP', '&F_2_KKK',
-    W, '&F_236_LP', '&F_6_KKK', '&F_4_KKK', '&F_214_LP', I, O, '&F_214_PP', '', '&F_DP_44', Y, A, S, D, '&F_DP_66', '&F_22_Kk', J, K, L, T, '', F_Combo, '&F_236_KK',
-    '&F_236_HK', '&F_236_MK', '&F_236_LK', '&F_236236_K', '', '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK', '', '', LALT, '&F_236_HP', H,
-    '&F_236_MP', '&F_214_MP', U, '&F_214_HP', '', Layout]
+  Fighting: ['', '', '&F_236236_HP', '&F_236236_MP', '&F_236236_LP', '&F_236_HP_Long', '&F_214_HP_Long', '&F_214214_LP', '&F_214214_MP', '&F_214214_HP', '', PRINTSCREEN,
+    TAB, '&F_236_PP', '&F_2_KKK', W, '&F_236_LP', '&F_6_KKK', '&F_4_KKK', '&F_214_LP', I, O, '&F_214_PP', '', '&F_DP_44', Y, A, S, D, '&F_DP_66', '&F_22_Kk', J, K,
+    L, T, '', F_Combo, '&F_236_KK', '&F_236_HK', '&F_236_MK', '&F_236_LK', '&F_236236_K', '', '', '&F_214214_K', '&F_214_LK', '&F_214_MK', '&F_214_HK', '&F_214_KK',
+    '', '', LALT, '&F_236_HP', H, '&F_236_MP', '&F_214_MP', U, '&F_214_HP', '', Layout]
   F_Combo:
   - ''
   - ''
