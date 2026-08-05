@@ -27,6 +27,14 @@
         };
     };
 
+    widgets {
+        battery_widget: battery_status {
+            compatible = "zmk,widget-battery-status";
+            display-name = "Battery";
+            show-percent;
+        };
+    };
+
     macros {
         AdvncedPaste: AdvncedPaste {
             compatible = "zmk,behavior-macro";
