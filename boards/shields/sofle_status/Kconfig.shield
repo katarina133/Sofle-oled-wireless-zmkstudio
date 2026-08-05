@@ -1,0 +1,5 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_SOFLE_STATUS
+	def_bool $(shields_list_contains,sofle_status)
