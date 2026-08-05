@@ -25,6 +25,8 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/endpoints.h>
 #include <zmk/keymap.h>
 #include <zmk/wpm.h>
+#include <zmk/hid_indicators.h>
+#include <zmk/events/hid_indicators_changed.h>
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -68,6 +70,13 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
 
     // Draw output status
     char output_text[10] = {};
+
+    if (state->caps_lock) {
+        lv_draw_label_dsc_t caps_dsc;
+        init_label_dsc(&caps_dsc, LVGL_FOREGROUND, &lv_font_montserrat_16,
+                       LV_TEXT_ALIGN_LEFT);
+        lv_canvas_draw_text(canvas, 0, 40, 68, &caps_dsc, "CAPS");
+    }
 
     switch (state->selected_endpoint.transport) {
     case ZMK_TRANSPORT_USB:
@@ -329,6 +338,32 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_wpm_status, struct wpm_status_state, wpm_stat
                             wpm_status_get_state)
 ZMK_SUBSCRIPTION(widget_wpm_status, zmk_wpm_state_changed);
 
+struct hid_indicators_state {
+    zmk_hid_indicators_t indicators;
+};
+
+static void set_hid_indicators(struct zmk_widget_status *widget,
+                               struct hid_indicators_state state) {
+    widget->state.caps_lock = (state.indicators & BIT(1)) != 0;
+    draw_top(widget->obj, widget->cbuf, &widget->state);
+}
+
+static void hid_indicators_update_cb(struct hid_indicators_state state) {
+    struct zmk_widget_status *widget;
+    SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) {
+        set_hid_indicators(widget, state);
+    }
+}
+
+static struct hid_indicators_state hid_indicators_get_state(const zmk_event_t *eh) {
+    const struct zmk_hid_indicators_changed *ev = as_zmk_hid_indicators_changed(eh);
+    return (struct hid_indicators_state){.indicators = ev->indicators};
+}
+
+ZMK_DISPLAY_WIDGET_LISTENER(widget_hid_indicators, struct hid_indicators_state,
+                            hid_indicators_update_cb, hid_indicators_get_state)
+ZMK_SUBSCRIPTION(widget_hid_indicators, zmk_hid_indicators_changed);
+
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
     lv_obj_set_size(widget->obj, 160, 68);
@@ -347,6 +382,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget_output_status_init();
     widget_layer_status_init();
     widget_wpm_status_init();
+    widget_hid_indicators_init();
 
     return 0;
 }
