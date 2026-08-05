@@ -1,9 +1,0 @@
-/*
- * Copyright (c) 2024 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- *
- * This shield contributes no hardware of its own -- the OLED is already declared
- * by the sofle shield. The file exists because ZMK discovers shield names by
- * globbing *.overlay next to a Kconfig.shield.
- */

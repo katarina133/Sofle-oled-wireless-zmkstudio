@@ -1,7 +1,0 @@
-file_format: "1"
-id: sofle_status
-name: Sofle Status Display
-type: shield
-url: https://github.com/katarina133/Sofle-oled-wireless-zmkstudio
-features:
-  - display
