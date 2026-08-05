@@ -1,0 +1,80 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SOFLE_STATUS
+
+choice ZMK_DISPLAY_STATUS_SCREEN
+    default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+endchoice
+
+# The custom screen replaces the built-in one, so the built-in widgets it used to
+# pull in have to be requested explicitly here, otherwise the OLEDs would lose the
+# battery / output / layer readouts they show today.
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+    select LV_USE_LABEL
+    imply LV_USE_THEME_MONO if LV_Z_BITS_PER_PIXEL=1
+    imply ZMK_WIDGET_BATTERY_STATUS
+    imply ZMK_WIDGET_OUTPUT_STATUS
+    imply ZMK_WIDGET_PERIPHERAL_STATUS
+    imply ZMK_WIDGET_LAYER_STATUS
+    imply ZMK_HID_INDICATORS
+    imply ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
+
+# Everything below re-applies settings that ZMK's app/src/display/Kconfig only
+# applies under ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN. Selecting the custom screen
+# silently drops all of them, and the resulting defaults are not survivable:
+#
+#   LV_Z_MEM_POOL_SIZE   4096 -> 2048 (Zephyr's default)
+#   LV_FONT_MONTSERRAT_16   y -> n
+#   LV_FONT_DEFAULT     Montserrat 16 -> UNSCII 8 (LV_CONF_MINIMAL's default)
+#
+# The heap one is what bricked the first version of this shield: ZMK implies
+# LV_CONF_MINIMAL, which turns LV_USE_ASSERT_MALLOC off, so a failed LVGL
+# allocation returns NULL and is dereferenced instead of being reported. That
+# faults on the display work queue thread and Zephyr halts the whole board --
+# both OLEDs freeze and the half stops scanning keys and answering BLE.
+if LVGL
+
+# 2048 was already tight for the three built-in widgets; this screen adds a
+# fourth. 8192 leaves real headroom, and 4KB of RAM is nothing on an nRF52840.
+config LV_Z_MEM_POOL_SIZE
+    default 8192
+
+# UNSCII 8 is ASCII-only -- it has none of the LV_SYMBOL glyphs the battery,
+# output and peripheral widgets print, so they render as empty boxes.
+config LV_FONT_MONTSERRAT_16
+    default y
+
+choice LV_FONT_DEFAULT
+    default LV_FONT_DEFAULT_MONTSERRAT_16
+endchoice
+
+# lv_theme_get_font_small(), used by the layer / modifier / caps rows.
+config LV_FONT_MONTSERRAT_12
+    default y
+
+endif # LVGL
+
+### Modifier indicator (C S A G) ###
+# Modifier state only exists on the central half: zmk_keycode_state_changed is
+# raised by keymap behaviors, which never run on a peripheral, and the split
+# protocol has no command to relay it. So this is central-only by construction.
+config SOFLE_STATUS_WIDGET_MODIFIERS
+    bool "Modifier indicator letters (Ctrl / Shift / Alt / Gui)"
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    select LV_USE_LABEL
+
+### Caps lock indicator ###
+# Caps lock does cross the split link: the central forwards the host's LED report
+# with ZMK_SPLIT_PERIPHERAL_HID_INDICATORS, so the peripheral can show it.
+# Defaults to the peripheral (right half); set =y in your .conf to show it on the
+# central half as well.
+config SOFLE_STATUS_WIDGET_CAPS
+    bool "Caps lock indicator"
+    depends on ZMK_HID_INDICATORS
+    default y if ZMK_SPLIT && !ZMK_SPLIT_ROLE_CENTRAL
+    default n
+    select LV_USE_LABEL
+
+endif
