@@ -27,10 +27,6 @@
         };
     };
 
-    &battery_widget {
-    show-percent;
-    };
-
     macros {
         AdvncedPaste: AdvncedPaste {
             compatible = "zmk,behavior-macro";
