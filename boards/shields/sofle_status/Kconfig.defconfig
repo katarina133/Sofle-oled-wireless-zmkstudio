@@ -1,0 +1,54 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SOFLE_STATUS
+
+choice ZMK_DISPLAY_STATUS_SCREEN
+    default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+endchoice
+
+# The custom screen replaces the built-in one, so the built-in widgets it used to
+# pull in have to be requested explicitly here, otherwise the OLEDs would lose the
+# battery / output / layer readouts they show today.
+#
+# Fonts are deliberately left alone here. ZMK only pins Montserrat 16 as the
+# default font when the *built-in* screen is selected, and re-declaring those
+# LVGL symbols from a shield Kconfig.defconfig is parsed before LVGL defines
+# them, which makes Zephyr abort on "defined without a type". The LVGL default
+# (Montserrat 14) carries the LV_SYMBOL glyphs the battery/output widgets need,
+# and ZMK_LV_FONT_DEFAULT_SMALL already defaults to Montserrat 12 for the layer
+# and indicator rows.
+#
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+    select LV_USE_LABEL
+    imply LV_USE_THEME_MONO if LV_Z_BITS_PER_PIXEL=1
+    imply ZMK_WIDGET_BATTERY_STATUS
+    imply ZMK_WIDGET_OUTPUT_STATUS
+    imply ZMK_WIDGET_PERIPHERAL_STATUS
+    imply ZMK_WIDGET_LAYER_STATUS
+    imply ZMK_HID_INDICATORS
+    imply ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
+
+### Modifier indicator (C S A G) ###
+# Modifier state only exists on the central half: zmk_keycode_state_changed is
+# raised by keymap behaviors, which never run on a peripheral, and the split
+# protocol has no command to relay it. So this is central-only by construction.
+config SOFLE_STATUS_WIDGET_MODIFIERS
+    bool "Modifier indicator letters (Ctrl / Shift / Alt / Gui)"
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    select LV_USE_LABEL
+
+### Caps lock indicator ###
+# Caps lock does cross the split link: the central forwards the host's LED report
+# with ZMK_SPLIT_PERIPHERAL_HID_INDICATORS, so the peripheral can show it.
+# Defaults to the peripheral (right half); set =y in your .conf to show it on the
+# central half as well.
+config SOFLE_STATUS_WIDGET_CAPS
+    bool "Caps lock indicator"
+    depends on ZMK_HID_INDICATORS
+    default y if ZMK_SPLIT && !ZMK_SPLIT_ROLE_CENTRAL
+    default n
+    select LV_USE_LABEL
+
+endif
