@@ -171,7 +171,7 @@ layers:
   - '6'
   - '-'
   - ''
-  - {t: Gallium, h: toggle}
+  - {t: ▽, type: trans}
   - Ctl+A
   - Ctl+F
   - '['
