@@ -147,19 +147,19 @@ layers:
   - F9
   - F10
   - F11
-  - ''
+  - '&AdvncedPaste'
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - '&AdvncedPaste'
+  - ''
   - '*'
   - '7'
   - '8'
   - '9'
   - KP PLUS
   - F12
-  - DEL
+  - ''
   - LEFT CONTROL
   - LEFT SHIFT
   - LEFT ALT
@@ -174,8 +174,8 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+A
   - Ctl+F
-  - '['
-  - ']'
+  - ESCAPE
+  - DELETE
   - ''
   - '&bootloader'
   - '&bootloader'
@@ -190,8 +190,8 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {type: held}
-  - DEL
-  - ESCAPE
+  - '['
+  - ']'
   - '0'
   - ','
   - BACKSPACE
