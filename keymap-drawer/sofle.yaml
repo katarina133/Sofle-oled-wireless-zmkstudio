@@ -159,12 +159,12 @@ layers:
   - '9'
   - KP PLUS
   - F12
-  - ''
+  - '['
   - LEFT CONTROL
   - LEFT SHIFT
   - LEFT ALT
   - ENTER
-  - ''
+  - ']'
   - KP DIVIDE
   - '4'
   - '5'
@@ -190,8 +190,8 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {type: held}
-  - '['
-  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '0'
   - ','
   - BACKSPACE
